@@ -1,13 +1,14 @@
 import './App.css'
-import React from 'react'
-function App() {
+
+import { Route,Routes } from 'react-router-dom'
+export default function App() {
   return (
     <>
-      <h1 className="text-4xl font-bold bg-gray-300">
-    lms
-</h1>
+    <Routes>
+      <Route path='/' element={home} />
+    </Routes>
     </>
   )
 }
 
-export default App
+
